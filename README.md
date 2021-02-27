@@ -21,3 +21,13 @@
    ```
 * `yarn tsc --init` - cria o arquivo `tsconfig..json` - configurações do Type Script
 * `yarn dev` - rodar o programa
+* **INSTALANDO TYPE ORM** https://typeorm.io/#/
+   * `yarn add typeorm reflect-metadata`   
+* **INSTALANDO SQLITE** (banco em memoria, nao usar para produção)
+   * `yarn add sqlite3` 
+* **ORM CONFIG** (onde vao esta o banco de dados, as entidades, migrations...)
+   * criar o arquivo `ormconfig.json`
+      * Informar: `"type": "sqlite"` e `"database: ./src/database/database.sqlite"` 
+   * `yarn typeorm migration:create -n CreateUsers` - migration
+   * `yarn typeorm migration:run` - roda a migration apos defifinr as colunas do BD
+   * `yarn typeorm migration:revert` - rollback da **ULTIMA** migration 
