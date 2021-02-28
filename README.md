@@ -31,3 +31,15 @@
    * `yarn typeorm migration:create -n CreateUsers` - migration
    * `yarn typeorm migration:run` - roda a migration apos defifinr as colunas do BD
    * `yarn typeorm migration:revert` - rollback da **ULTIMA** migration 
+
+### Tipos de Testes Automatizados:
+* Testes Unitarios: determinadas funcionalidades da aplicação
+   * TDD: Desenvolver orientado a testes
+   * Nunca fazer testes de acesso a banco de dados, ou api externas
+* Testes de Integração: funcionalidade completa da aplicação
+* Teste Ponta a Ponta (End 2 End): toda ação doo usuario em uma aplicação(mais para front-end)
+#### Instalação:
+* `yarn add jest @types/jest -D`
+* `yarn jest --init`
+* `yarn add ts-jest -D`
+* `yarn add supertest @types/supertest -D`
