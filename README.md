@@ -43,3 +43,13 @@
 * `yarn jest --init`
 * `yarn add ts-jest -D`
 * `yarn add supertest @types/supertest -D`
+
+### Enviar Email:
+* [NodeMailer](https://nodemailer.com/about/)
+* [Ethereal](https://ethereal.email/)
+* `yarn add nodemailer`
+* `yarn add @types/nodemailer -D`
+
+### Customização (templates):
+[Handlebars](https://handlebarsjs.com/)
+* `yarn add handlebars`
