@@ -1,6 +1,6 @@
 import { Request, Response} from "express";
 import { getCustomRepository } from "typeorm";
-import { SurveysRepository } from "../../repositories/SurveysRepository";
+import { SurveysRepository } from "../repositories/SurveysRepository";
 
 class SurveysController {
     static create(arg0: string, create: any) {
