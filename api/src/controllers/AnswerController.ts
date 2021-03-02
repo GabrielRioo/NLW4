@@ -21,9 +21,12 @@ class AnswerController {
             });
         }
 
+        surveyUser.value = Number(value);
+
         await surveysUsersRepository.save(surveyUser);
 
         return response.json(surveyUser);
+
     }
 }
 
